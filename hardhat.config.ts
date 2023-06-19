@@ -6,6 +6,7 @@ import "@primitivefi/hardhat-dodoc";
 import "@typechain/hardhat";
 import "hardhat-abi-exporter";
 import "hardhat-deploy";
+import "hardhat-deploy-ethers";
 import "hardhat-gas-reporter";
 import "hardhat-spdx-license-identifier";
 import "hardhat-watcher";
@@ -195,7 +196,7 @@ const config: HardhatUserConfig = {
         eachLine: removeConsoleLog(bre => bre.network.name !== "hardhat" && bre.network.name !== "localhost"),
     },
     solidity: {
-        version: "0.8.19",
+        version: "0.8.18",
         settings: {
             optimizer: {
                 enabled: true,
